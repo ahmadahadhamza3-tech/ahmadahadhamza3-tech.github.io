@@ -180,7 +180,7 @@ function renderModalRecipeContent(r, multiplier) {
     </div>
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-top:14px;">
       <div class="eyebrow" style="margin-bottom:0;">${r.category.toUpperCase()} • ★ ${r.rating} • ⏱ ${r.time}</div>
-      <span class="badge" style="background:var(--accent-soft); color:var(--accent); font-weight:700; font-size:12px; padding:4px 10px; border-radius:999px;">Chef Tested</span>
+      <span class="badge" style="background:var(--accent-soft); color:var(--accent); font-weight:700; font-size:12px; padding:4px 10px; border-radius:999px;">Recipe Guide</span>
     </div>
     <h2 style="font-family:'Playfair Display',serif; font-size:28px; margin-top:8px;">${r.name}</h2>
     <p style="color:var(--muted); margin-top:8px; line-height:1.6;">${r.description}</p>
