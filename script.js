@@ -97,7 +97,7 @@ function render(list=recipes, limit=null){
   }
   targetList.forEach(r=>{
     const card=document.createElement("article");card.className="recipe-card";
-    card.innerHTML=`<div class="recipe-photo"><img src="${r.image}" alt="${r.name}" loading="lazy" referrerpolicy="no-referrer"><button class="favorite" aria-label="Favorite">♡</button></div><div class="recipe-body"><h3>${r.name}</h3><p>${r.description}</p><div class="recipe-meta"><span>⏱ ${r.time}</span><span>★ ${r.rating}</span><span>${r.difficulty}</span></div><button class="recipe-button">View recipe</button>${r.id <= 19 ? `<a class="recipe-page-link" href="recipes/recipe-${r.id}.html">Open full page</a>` : ""}</div>`;
+    card.innerHTML=`<div class="recipe-photo"><img src="${r.image}" alt="${r.name}" loading="lazy" referrerpolicy="no-referrer"><button class="favorite" aria-label="Favorite">♡</button></div><div class="recipe-body"><h3>${r.name}</h3><p>${r.description}</p><div class="recipe-meta"><span>⏱ ${r.time}</span><span>★ ${r.rating}</span><span>${r.difficulty}</span></div><button class="recipe-button">View recipe</button>${r.id <= 24 ? `<a class="recipe-page-link" href="recipes/recipe-${r.id}.html">Open full page</a>` : ""}</div>`;
     card.querySelector(".favorite")?.addEventListener("click",e=>{e.stopPropagation();const b=e.currentTarget;b.classList.toggle("active");b.textContent=b.classList.contains("active")?"♥":"♡";});
     card.querySelector(".recipe-button")?.addEventListener("click",()=>openRecipe(r.id));
     grid.appendChild(card);
