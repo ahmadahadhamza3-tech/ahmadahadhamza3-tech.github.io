@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ahmadahadhamza3-tech.github.io/sitemap.xml
