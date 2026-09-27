@@ -151,21 +151,12 @@
       <h1 style="font-family: 'Playfair Display', serif; font-size: 36px; margin: 10px 0 8px;">Contact Us</h1>
       <p style="color: var(--muted); font-size: 15px;">Have questions about a recipe or want to suggest a new dish? We'd love to hear from you!</p>
 
-      <form class="contact-form" id="contactForm">
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" required placeholder="Ahmad Hamza">
-        </div>
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" required placeholder="your.email@example.com">
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" required placeholder="Tell us what's on your mind..."></textarea>
-        </div>
-        <button type="submit" class="contact-btn">Send Message</button>
-      </form>
+      <div class="contact-form" style="padding:24px;border:1px solid var(--line);border-radius:16px;">
+      <h2>Get in touch</h2>
+      <p>If you have a recipe question, correction, or privacy request, please contact the FlavorNest team through the site's GitHub repository.</p>
+      <p><a class="primary" href="https://github.com/ahmadahadhamza3-tech/ahmadahadhamza3-tech.github.io/issues" target="_blank" rel="noopener noreferrer">Open FlavorNest Contact / Issue Page →</a></p>
+      <p style="font-size:13px;color:var(--muted);margin-top:14px;">Please do not post passwords, payment details, or other sensitive personal information in a public issue.</p>
+    </div>
     </div>
   </div>
 </main>
@@ -225,18 +216,5 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
-<script>
-  const contactForm = document.getElementById("contactForm");
-  if (contactForm) {
-    contactForm.onsubmit = (e) => {
-      e.preventDefault();
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("message").value = "";
-      showToast("Message sent! We'll reply soon. ♥");
-    };
-  }
-</script>
 </body>
 </html>
